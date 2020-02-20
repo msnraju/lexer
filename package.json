@@ -1,0 +1,37 @@
+{
+  "name": "@msnraju/lexer",
+  "version": "1.0.0",
+  "description": "Lexer",
+  "main": "lib/bundle.js",
+  "module": "lib/bundle.es.js",
+  "types": "lib",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msnraju/lexer.git"
+  },
+  "keywords": [
+    "Lexer"
+  ],
+  "author": "MSN Raju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msnraju/lexer/issues"
+  },
+  "homepage": "https://github.com/msnraju/lexer#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.31.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@msnraju/reg-expressions": "^1.0.2"
+  }
+}
