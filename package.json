@@ -1,10 +1,10 @@
 {
   "name": "@msnraju/lexer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lexer",
   "main": "lib/bundle.js",
   "module": "lib/bundle.es.js",
-  "types": "",
+  "types": "./lib",
   "scripts": {
     "build": "rimraf lib && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
