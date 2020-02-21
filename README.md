@@ -4,7 +4,7 @@ Generates stream of tokens based on the LexRules
 
 ## Installation
 ```sh
-npm install @msnraju\lexer
+npm install @msnraju/lexer
 ```
 ## API
 

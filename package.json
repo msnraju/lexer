@@ -1,10 +1,10 @@
 {
   "name": "@msnraju/lexer",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Lexer",
   "main": "lib/bundle.js",
   "module": "lib/bundle.es.js",
-  "types": "lib",
+  "types": "",
   "scripts": {
     "build": "rimraf lib && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,7 +31,5 @@
     "rollup-plugin-typescript2": "^0.26.0",
     "typescript": "^3.7.5"
   },
-  "dependencies": {
-    "@msnraju/reg-expressions": "^1.0.2"
-  }
+  "dependencies": {}
 }

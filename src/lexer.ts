@@ -1,4 +1,3 @@
-import { RegExpression } from "@msnraju/reg-expressions";
 import { RuleName } from "./enums";
 import { Labels } from "./labels";
 import { ILexRule, IToken } from "./models";
@@ -33,9 +32,10 @@ export default class Lexer {
             for (var i = 0; i < this.rules.length; i++) {
                 const rule = this.rules[i];
 
-                const expr = new RegExpression(rule.expression);
-                const match = expr.match(this.input, this.current);
-                if (match.length > 0) {
+                const expr = new RegExp(rule.expression, 'g');
+                expr.lastIndex = this.current;
+                const match = expr.exec(this.input);
+                if (match && match.index == this.current) {
                     found = true;
 
                     const value = match[0];
