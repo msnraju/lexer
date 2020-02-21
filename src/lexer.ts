@@ -35,7 +35,7 @@ export default class Lexer {
                 const expr = new RegExp(rule.expression, 'g');
                 expr.lastIndex = this.current;
                 const match = expr.exec(this.input);
-                if (match && match.index == this.current) {
+                if (match && match.index == this.current && match[0].length != 0) {
                     found = true;
 
                     const value = match[0];
