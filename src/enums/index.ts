@@ -1,3 +1,2 @@
-import { RuleName } from "./rule-name.enum";
-
+import { RuleName } from './rule-name.enum';
 export { RuleName };

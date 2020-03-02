@@ -1,3 +1,3 @@
 export interface ILexeme {
-    value: any;
+  value: string;
 }

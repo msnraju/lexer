@@ -2,34 +2,62 @@
   "name": "@msnraju/lexer",
   "version": "1.0.6",
   "description": "Lexer",
-  "main": "lib/bundle.js",
-  "module": "lib/bundle.es.js",
-  "types": "./lib",
-  "scripts": {
-    "build": "rimraf lib && rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/msnraju/lexer.git"
-  },
-  "keywords": [
-    "Lexer"
-  ],
   "author": "MSN Raju",
+  "module": "dist/lexer.esm.js",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/msnraju/lexer/issues"
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "node",
+    "javascript",
+    "typescript",
+    "lexer",
+    "scanner",
+    "token",
+    "tokenizer",
+    "compiler",
+    "parser"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "husky": "^4.2.3",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.11.0",
+    "typescript": "^3.8.2",
+    "tslint": "^6.0.0"
+  },
+  "dependencies": {},
+  "jest": {
+    "collectCoverage": true
   },
   "homepage": "https://github.com/msnraju/lexer#readme",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^1.31.1",
-    "rollup-plugin-terser": "^5.2.0",
-    "rollup-plugin-typescript2": "^0.26.0",
-    "typescript": "^3.7.5"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msnraju/lexer.git"
   },
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/msnraju/lexer/issues"
+  }
 }

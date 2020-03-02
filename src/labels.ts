@@ -1,3 +1,3 @@
 export class Labels {
-    static UnexpectedToken = 'Unexpected token ';
+  static UnexpectedToken = 'Unexpected token ';
 }
