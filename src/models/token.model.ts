@@ -1,5 +1,5 @@
 export interface IToken {
-    type: string;
-    value?: any;
-    [key: string]: any;
+  type: string;
+  value: string;
+  [key: string]: string;
 }
