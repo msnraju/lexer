@@ -1,6 +1,6 @@
 {
   "name": "@msnraju/lexer",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Lexer",
   "author": "MSN Raju",
   "module": "dist/lexer.esm.js",
